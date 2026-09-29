@@ -1,0 +1,51 @@
+.jobs-page {
+  padding: 50px;
+  background-color: #f8fafc;
+  min-height: 90vh;
+}
+
+.jobs-page h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.jobs-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 25px;
+
+  max-width: 1100px;
+
+  margin: 0 auto;
+}
+
+.job-search {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.job-search input {
+  width: 300px;
+  padding: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.no-jobs {
+  text-align: center;
+  color: #64748b;
+  font-size: 18px;
+}
+
+.job-search select {
+  width: 180px;
+  padding: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: white;
+}

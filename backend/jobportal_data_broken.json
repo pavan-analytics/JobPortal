@@ -1,0 +1,116 @@
+[
+{
+  "model": "jobportal.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$VPD6R9XWrnDCYNhlBZssUx$y+XytOunH8C3KiGc4YPP7RyeaLNcduN8yh0HfY2aV28=",
+    "last_login": "2026-09-26T11:58:25.354Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@example.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-09-26T11:55:10.483Z",
+    "role": "candidate",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jobportal.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$XMyCJgJHhEJEvpDcEX174S$LdD5X3HOTk7iNbgZPTtNFluH7S5149bdf8Dkx0WZMsM=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "candidate1@gmail.com",
+    "first_name": "",
+    "last_name": "",
+    "email": "candidate1@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-09-26T14:26:51.364Z",
+    "role": "candidate",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jobportal.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$KOYPrcnz0hE0RsWPcT8BFL$3tbtof2GJ77ZBa4wmGl0Puhsbh4eZTgz9EoHd/yX63o=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "candidate2@gmail.com",
+    "first_name": "",
+    "last_name": "",
+    "email": "candidate2@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-09-26T14:34:26.303Z",
+    "role": "candidate",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jobportal.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$2qbDU4bkJaRZAomJqhlO8Q$Mmvkc/uVYTF99/yWu/4xWYXj3ex2+17w3tTzoB5mqC4=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "candidate3@gmail.com",
+    "first_name": "",
+    "last_name": "",
+    "email": "candidate3@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-09-26T15:56:00.267Z",
+    "role": "candidate",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jobportal.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$XcdONII8JhvIQ1RACskO4Q$0ErFCBhs91lYxL5eom6SxOaOOAre4wne5MbyjBg1hnQ=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "recruiter1@gmail.com",
+    "first_name": "",
+    "last_name": "",
+    "email": "recruiter1@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-09-27T05:24:39.484Z",
+    "role": "recruiter",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jobportal.candidateprofile",
+  "pk": 1,
+  "fields": {
+    "user": 3,
+    "phone": "9876543210",
+    "skills": "Python, SQL, Power BI, Django, Power BI",
+    "experience": "Fresher",
+    "location": "Hyderabad"
+  }
+},
+{
+  "model": "jobportal.job",
+  "pk": 1,
+  "fields": {
+    "recruiter": 1,
+    "title": "Python Developer",
+    "company": "Tech Solutions",
+    "location": "Hyderabad",
+    "salary": 

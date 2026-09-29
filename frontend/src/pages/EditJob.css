@@ -1,0 +1,76 @@
+.edit-job-page {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background-color: #f8fafc;
+}
+
+.edit-job-card {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.edit-job-card h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.edit-job-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-job-card label {
+  margin-top: 15px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.edit-job-card input,
+.edit-job-card select,
+.edit-job-card textarea {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.edit-job-card textarea {
+  resize: vertical;
+}
+
+.edit-job-card button {
+  margin-top: 25px;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.edit-job-card button:hover {
+  background-color: #1d4ed8;
+}
+
+.error {
+  color: #b91c1c;
+  background-color: #fee2e2;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.success {
+  color: #166534;
+  background-color: #dcfce7;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}

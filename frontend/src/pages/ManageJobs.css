@@ -1,0 +1,76 @@
+.manage-jobs-page {
+  min-height: 90vh;
+  padding: 50px;
+  background-color: #f8fafc;
+}
+
+.manage-jobs-page h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.manage-jobs-list {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.manage-job-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 25px;
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.manage-job-card h2 {
+  margin-bottom: 10px;
+}
+
+.manage-job-card p {
+  margin: 6px 0;
+  color: #64748b;
+}
+
+.job-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.view-job-button,
+.edit-button,
+.delete-button {
+  padding: 9px 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.view-job-button {
+  background-color: #2563eb;
+  color: white;
+}
+
+.edit-button {
+  background-color: #f59e0b;
+  color: white;
+}
+
+.delete-button {
+  background-color: #dc2626;
+  color: white;
+}
+
+.no-jobs {
+  text-align: center;
+  color: #64748b;
+  font-size: 18px;
+}
