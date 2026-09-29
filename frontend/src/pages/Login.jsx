@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./Login.css";
+const API_URL = import.meta.env.VITE_API_URL;
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -28,7 +29,7 @@ function Login() {
     try {
       // Step 1: Get JWT tokens
       const tokenResponse = await axios.post(
-        "http://127.0.0.1:8000/api/token/",
+        `${API_URL}/token/`,
         {
           username: email,
           password: password,
@@ -50,7 +51,7 @@ function Login() {
 
       // Step 2: Get the real user information from Django
       const userResponse = await axios.get(
-        "http://127.0.0.1:8000/api/me/",
+        `${API_URL}/me/`,
         {
           headers: {
             Authorization: `Bearer ${accessToken}`,
