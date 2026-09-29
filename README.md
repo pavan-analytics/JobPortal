@@ -73,6 +73,14 @@ Frontend: `http://localhost:5173`
 
 Backend: `http://127.0.0.1:8000`
 
+## Production
+
+Run the Django backend with Gunicorn:
+
+```bash
+gunicorn config.wsgi:application
+```
+
 ## Database
 
 MySQL 8.4
