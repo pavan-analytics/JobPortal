@@ -22,3 +22,5 @@ urlpatterns = [
         name="token_refresh",
     ),
 ]
+
+handler500 = "config.views.server_error"
