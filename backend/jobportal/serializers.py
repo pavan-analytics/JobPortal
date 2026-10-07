@@ -16,14 +16,30 @@ class RegisterSerializer(serializers.ModelSerializer):
 
         extra_kwargs = {
             "password": {
-                "write_only": True
+                "write_only": True,
+                "min_length": 8,
             }
         }
 
     def validate_email(self, value):
-        if User.objects.filter(email=value).exists():
+        value = value.strip().lower()
+
+        if not value:
+            raise serializers.ValidationError(
+                "Email is required."
+            )
+
+        if User.objects.filter(email__iexact=value).exists():
             raise serializers.ValidationError(
                 "A user with this email already exists."
+            )
+
+        return value
+
+    def validate_role(self, value):
+        if value not in ["candidate", "recruiter"]:
+            raise serializers.ValidationError(
+                "Role must be either candidate or recruiter."
             )
 
         return value
@@ -60,11 +76,13 @@ class JobSerializer(serializers.ModelSerializer):
             "description",
             "created_at",
         ]
+
         read_only_fields = [
             "id",
             "recruiter",
             "created_at",
         ]
+
 
 class CandidateProfileSerializer(serializers.ModelSerializer):
 
@@ -89,6 +107,7 @@ class CandidateProfileSerializer(serializers.ModelSerializer):
             "id",
             "email",
         ]
+
 
 class ApplicationSerializer(serializers.ModelSerializer):
 
